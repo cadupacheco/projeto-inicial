@@ -1,0 +1,17 @@
+/* esse é um comentário em css */
+/* e esse é um comentário
+em linha para faciliara a leitura*/
+
+/* exemplo de seletores*/
+
+/*ex de seletor tipo TAG*/
+header{
+    font-size: 32px;
+ }
+ 
+ h1{
+    background-color: #000;
+    color: rgb(220, 173, 173);
+    text-align: center;
+    font-size: 3em;
+ }

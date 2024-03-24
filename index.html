@@ -1,27 +1,75 @@
-<!--Este é um comentário em HTML. -->
-<!DOCTYPE HTML> <!--Este é o DTD do HTML 5. -->
-
+<!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Basic exemple of HTML</title>
-	</head>
-	<body>
-		<div class="container">
-			<header class="cabecalho">
-				<h1 style="text-align: center;">Minha Página</h1>
-				
-				<nav>
-					<ul>
-						
-						<li> <a href="https://www2.fiap.com.br" target="_blank"> FIAP </a> </li>
-						<li> <a href="https://www.google.com.br" target="_blank"> GOOGLE </a></li>
-						<li> <a href="https://github" target="_blank"> GITHUB </a></li>
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HOME</title>
 
-					</ul>
-				</nav>
-			</header>
-		</div>	
+<link rel="stylesheet" href="../projeto-inicial/css/style.css">
+
+</head>
+
+<body>
+	<span id="topo"></span>
+	<div class="container">
+		<header class="cabecalho">
+			<h1>Minha Página</h1>
+
+			<nav>
+				<ul>
+					<li> <a href="./paginas/help.html"><img src="./img/question.png" alt="Interrogação" width="5%"> </a> </li>
+					<li> <a href="./paginas/about.html"><img src="./img/info.png" alt="Letra i dentro de um círculo" width="5%"></a> </li>
+					<li> <a href="#contact"><img src="./img/contact.png" alt="Envelope com cartas" width="5%"> </a> </li>
+				</ul>
+			</nav>
+
+		</header>
+
+		<section class="conteudo">
+			<div>
+				<h2>HELP</h2>
+				<p>Help - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore saepe eius blanditiis necessitatibus rem eligendi ad aliquam, quis quae, consectetur magni. Officiis natus ex doloremque corporis harum neque impedit ipsum.</p>
+				<a href="#">Mais...</a>
+			</div>
+			<div>
+				<h2>ABOUT</h2>
+				<p>About - Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, dolores sequi, iure architecto culpa blanditiis autem saepe enim ex perspiciatis tenetur dicta atque in excepturi provident consectetur asperiores quod! Esse!</p>
+				<a href="#">Mais...</a>
+			</div>
+			<div id="contact">
+				<h2>CONTACT</h2>
+				<form>
+					<fieldset>
+						<legend>Customer Data</legend>
+						<div>
+							<label for="idNm">Nome:</label>
+							<input type="text"  name="txtNm" id="idNm" placeholder="Digite seu nome."/>
+						</div>
+						<div>
+							<label for="idEmail">Email:</label>
+							<input type="email"  name="txtEmail" id="idEmail" placeholder="Digite seu email."/>
+						</div>
+						<div>
+							<button type="button">Send</button>
+						</div>
+					</fieldset>
+					<a href="#topo">Voltar</a>
+				</form>
+			</div>
+		</section>
+
+		<footer>
+			<nav>
+				<ul>
+					<li><a href="https://www2.fiap.com.br" target="_blank">FIAP</a> </li>
+            		<li> <a href="https://www.google.com.br" target="_blank">GOOGLE</a> </li>
+            		<li><a href="https://github.com" target="_blank">Github</a> </li>
+				</ul>
+			</nav>
+			<p>Todod os direitos reservados &copy; - Minha Página 2024</p>
+		</footer>
+
+		</div>
 	</body>
 </html>
